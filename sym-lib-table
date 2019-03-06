@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name my_lib)(type Legacy)(uri "C:/Users/David McIntyre/Documents/Winter_2019/Densmore_Rotation/KiCAD_Projects/droplet_sorter/my_lib.lib")(options "")(descr ""))
+  (lib (name droplet_sorter-rescue)(type Legacy)(uri ${KIPRJMOD}/droplet_sorter-rescue.lib)(options "")(descr ""))
+)

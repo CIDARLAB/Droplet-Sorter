@@ -1,0 +1,252 @@
+EESchema Schematic File Version 4
+LIBS:droplet_sorter-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_FET:BUK7M10-40EX Q3
+U 1 1 5C33FF62
+P 6950 4000
+F 0 "Q3" H 7155 4046 50  0000 L CNN
+F 1 "IXFA6N120P" H 7155 3955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:LFPAK33" H 7150 3925 50  0001 L CIN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BUK7M10-40E.pdf" V 6950 4000 50  0001 L CNN
+	1    6950 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 3400 7050 3600
+Wire Wire Line
+	7050 3600 7050 3800
+$Comp
+L power:GND #PWR03
+U 1 1 5C34005D
+P 7050 5100
+F 0 "#PWR03" H 7050 4850 50  0001 C CNN
+F 1 "GND" H 7055 4927 50  0000 C CNN
+F 2 "" H 7050 5100 50  0001 C CNN
+F 3 "" H 7050 5100 50  0001 C CNN
+	1    7050 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 4200 7050 4700
+$Comp
+L Transistor_BJT:2N3904 Q1
+U 1 1 5C340160
+P 5700 3700
+F 0 "Q1" H 5891 3746 50  0000 L CNN
+F 1 "02N3904" H 5891 3655 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5900 3625 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 5700 3700 50  0001 L CNN
+	1    5700 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N3906 Q2
+U 1 1 5C3401D3
+P 5700 4300
+F 0 "Q2" H 5891 4254 50  0000 L CNN
+F 1 "02N3906" H 5891 4345 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5900 4225 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 5700 4300 50  0001 L CNN
+	1    5700 4300
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5800 3900 5800 4000
+Wire Wire Line
+	5800 4000 6750 4000
+Connection ~ 5800 4000
+Wire Wire Line
+	5800 4000 5800 4100
+Wire Wire Line
+	5500 3700 5300 3700
+Wire Wire Line
+	5300 3700 5300 4050
+Wire Wire Line
+	5300 4300 5500 4300
+Wire Wire Line
+	5800 4500 5800 4700
+Wire Wire Line
+	5800 4700 7050 4700
+Connection ~ 7050 4700
+Wire Wire Line
+	7050 4700 7050 4950
+$Comp
+L MCU_Module:Arduino_UNO_R3 A1
+U 1 1 5C34048A
+P 4150 3850
+F 0 "A1" H 3700 4950 50  0000 C CNN
+F 1 "Arduino_UNO_R3" H 3700 4850 50  0000 C CNN
+F 2 "Module:Arduino_UNO_R3" H 4300 2800 50  0001 L CNN
+F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 3950 4900 50  0001 C CNN
+	1    4150 3850
+	-1   0    0    -1  
+$EndComp
+Connection ~ 7050 4950
+Wire Wire Line
+	7050 4950 7050 5100
+$Comp
+L power:+12V #PWR01
+U 1 1 5C34078F
+P 5800 2550
+F 0 "#PWR01" H 5800 2400 50  0001 C CNN
+F 1 "+12V" H 5815 2723 50  0000 C CNN
+F 2 "" H 5800 2550 50  0001 C CNN
+F 3 "" H 5800 2550 50  0001 C CNN
+	1    5800 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 4050 4900 4050
+Connection ~ 5300 4050
+Wire Wire Line
+	5300 4050 5300 4300
+Wire Wire Line
+	4050 4950 4150 4950
+Wire Wire Line
+	7050 3600 7600 3600
+Connection ~ 7050 3600
+Text Label 7250 3600 0    50   ~ 0
+PULSE_OUT
+Wire Wire Line
+	4150 4950 4250 4950
+Connection ~ 4150 4950
+Connection ~ 4250 4950
+$Comp
+L power:+5V #PWR02
+U 1 1 5C3506AD
+P 3950 2650
+F 0 "#PWR02" H 3950 2500 50  0001 C CNN
+F 1 "+5V" H 3965 2823 50  0000 C CNN
+F 2 "" H 3950 2650 50  0001 C CNN
+F 3 "" H 3950 2650 50  0001 C CNN
+	1    3950 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2650 3950 2850
+Text Notes 3500 2400 0    50   ~ 0
+Power from USB Connection
+$Comp
+L Device:R R2
+U 1 1 5C3CD1DE
+P 5800 3000
+F 0 "R2" H 5870 3046 50  0000 L CNN
+F 1 "10K" H 5870 2955 50  0000 L CNN
+F 2 "" V 5730 3000 50  0001 C CNN
+F 3 "~" H 5800 3000 50  0001 C CNN
+	1    5800 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3150 5800 3500
+$Comp
+L Device:R R1
+U 1 1 5C3CD31B
+P 5050 4050
+F 0 "R1" V 4843 4050 50  0000 C CNN
+F 1 "1K" V 4934 4050 50  0000 C CNN
+F 2 "" V 4980 4050 50  0001 C CNN
+F 3 "~" H 5050 4050 50  0001 C CNN
+	1    5050 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L droplet_sorter-rescue:HIA4U1.6-my_lib U1
+U 1 1 5C3CE13F
+P 6900 2800
+F 0 "U1" H 6925 3265 50  0000 C CNN
+F 1 "HIA4U1.6" H 6925 3174 50  0000 C CNN
+F 2 "" H 6900 3200 50  0001 C CNN
+F 3 "" H 6900 3200 50  0001 C CNN
+	1    6900 2800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 2700 6250 2700
+$Comp
+L power:GND #PWR04
+U 1 1 5C3CF09F
+P 6100 2800
+F 0 "#PWR04" H 6100 2550 50  0001 C CNN
+F 1 "GND" H 6105 2627 50  0000 C CNN
+F 2 "" H 6100 2800 50  0001 C CNN
+F 3 "" H 6100 2800 50  0001 C CNN
+	1    6100 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5C3CF527
+P 7650 2650
+F 0 "#PWR05" H 7650 2400 50  0001 C CNN
+F 1 "GND" H 7655 2477 50  0000 C CNN
+F 2 "" H 7650 2650 50  0001 C CNN
+F 3 "" H 7650 2650 50  0001 C CNN
+	1    7650 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 2800 6250 2800
+Wire Wire Line
+	7500 2650 7650 2650
+Wire Wire Line
+	7500 2550 7800 2550
+Wire Wire Line
+	7800 2550 7800 3400
+Wire Wire Line
+	7800 3400 7600 3400
+$Comp
+L Device:R R3
+U 1 1 5C3D0298
+P 7450 3400
+F 0 "R3" V 7243 3400 50  0000 C CNN
+F 1 "10-100k" V 7334 3400 50  0000 C CNN
+F 2 "" V 7380 3400 50  0001 C CNN
+F 3 "~" H 7450 3400 50  0001 C CNN
+	1    7450 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7300 3400 7050 3400
+Connection ~ 5800 2700
+Wire Wire Line
+	5800 2700 5800 2850
+Wire Wire Line
+	5800 2550 5800 2700
+Text Notes 5350 2300 0    50   ~ 0
+Power from DC Supply
+Wire Wire Line
+	5200 4050 5300 4050
+Wire Wire Line
+	4250 4950 7050 4950
+Text Notes 7350 7500 0    50   ~ 0
+Droplet Sorter Pulse Generator
+Text Notes 8150 7650 0    50   ~ 0
+January 14th, 2018
+Text Notes 10600 7650 0    50   ~ 0
+3
+$Sheet
+S 8600 4400 1550 1150
+U 5C7D6DB6
+F0 "Sheet5C7D6DB5" 50
+F1 "1200VTransformer.sch" 50
+F2 "V_IN" I L 8600 4650 50 
+F3 "GND" I L 8600 5250 50 
+F4 "V_OUT" I R 10150 4650 50 
+F5 "SWITCH_IN" I L 8600 4950 50 
+$EndSheet
+$EndSCHEMATC

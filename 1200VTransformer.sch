@@ -1,0 +1,462 @@
+EESchema Schematic File Version 4
+LIBS:droplet_sorter-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Transformer_1P_1S T?
+U 1 1 5C7D7578
+P 4350 2600
+F 0 "T?" H 4350 2978 50  0000 C CNN
+F 1 "Transformer_1P_1S" H 4350 2887 50  0000 C CNN
+F 2 "" H 4350 2600 50  0001 C CNN
+F 3 "~" H 4350 2600 50  0001 C CNN
+	1    4350 2600
+	1    0    0    -1  
+$EndComp
+Text HLabel 1600 2400 0    50   Input ~ 0
+V_IN
+Text HLabel 1550 4500 0    50   Input ~ 0
+GND
+Text HLabel 9950 2800 2    50   Input ~ 0
+V_OUT
+Text HLabel 5000 3550 2    50   Input ~ 0
+GND
+$Comp
+L Device:C C?
+U 1 1 5C7D7E21
+P 5150 2400
+F 0 "C?" V 5402 2400 50  0000 C CNN
+F 1 "C" V 5311 2400 50  0000 C CNN
+F 2 "" H 5188 2250 50  0001 C CNN
+F 3 "~" H 5150 2400 50  0001 C CNN
+	1    5150 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5C7D7EB2
+P 5400 2600
+F 0 "D?" V 5354 2679 50  0000 L CNN
+F 1 "D" V 5445 2679 50  0000 L CNN
+F 2 "" H 5400 2600 50  0001 C CNN
+F 3 "~" H 5400 2600 50  0001 C CNN
+	1    5400 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5C7D806B
+P 5950 2600
+F 0 "D?" V 5996 2521 50  0000 R CNN
+F 1 "D" V 5905 2521 50  0000 R CNN
+F 2 "" H 5950 2600 50  0001 C CNN
+F 3 "~" H 5950 2600 50  0001 C CNN
+	1    5950 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C7D809B
+P 5700 2800
+F 0 "C?" H 5815 2846 50  0000 L CNN
+F 1 "C" H 5815 2755 50  0000 L CNN
+F 2 "" H 5738 2650 50  0001 C CNN
+F 3 "~" H 5700 2800 50  0001 C CNN
+	1    5700 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4750 2400 5000 2400
+Wire Wire Line
+	5300 2400 5400 2400
+Wire Wire Line
+	5400 2450 5400 2400
+Connection ~ 5400 2400
+Wire Wire Line
+	4750 2800 4850 2800
+Wire Wire Line
+	5400 2800 5400 2750
+Text Notes 5750 1900 2    50   ~ 0
+Voltage Doubler
+Text Notes 7150 1900 2    50   ~ 0
+Voltage Doubler
+Text Notes 8600 1900 2    50   ~ 0
+Voltage Doubler
+Text Notes 10000 1900 2    50   ~ 0
+Voltage Doubler
+Text Notes 1950 1800 2    50   ~ 0
+Vin = 12V
+Text Notes 4650 1800 2    50   ~ 0
+V = 120 V \n(1:10 Turns) 
+Text Notes 5650 1600 2    50   ~ 0
+V = 240 V
+Text Notes 7000 1600 2    50   ~ 0
+V = 480 V\n(IDEAL)
+Text Notes 8450 1600 2    50   ~ 0
+V = 960V\n(IDEAL)
+Text Notes 9800 1600 2    50   ~ 0
+V = 1920V\n(IDEAL)
+$Comp
+L Device:D D?
+U 1 1 5C7E090B
+P 6600 2600
+F 0 "D?" V 6554 2679 50  0000 L CNN
+F 1 "D" V 6645 2679 50  0000 L CNN
+F 2 "" H 6600 2600 50  0001 C CNN
+F 3 "~" H 6600 2600 50  0001 C CNN
+	1    6600 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C7E0943
+P 6300 2400
+F 0 "C?" V 6552 2400 50  0000 C CNN
+F 1 "C" V 6461 2400 50  0000 C CNN
+F 2 "" H 6338 2250 50  0001 C CNN
+F 3 "~" H 6300 2400 50  0001 C CNN
+	1    6300 2400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5550 2800 5400 2800
+Connection ~ 5400 2800
+Wire Wire Line
+	5850 2800 5950 2800
+Wire Wire Line
+	5950 2800 5950 2750
+Wire Wire Line
+	5950 2400 5950 2450
+Wire Wire Line
+	5400 2400 5950 2400
+Wire Wire Line
+	6150 2400 5950 2400
+Wire Wire Line
+	6450 2400 6600 2400
+Wire Wire Line
+	6600 2450 6600 2400
+Connection ~ 6600 2400
+Wire Wire Line
+	5950 2800 6600 2800
+Wire Wire Line
+	6600 2800 6600 2750
+$Comp
+L Device:C C?
+U 1 1 5C7E3A28
+P 6900 2800
+F 0 "C?" H 7015 2846 50  0000 L CNN
+F 1 "C" H 7015 2755 50  0000 L CNN
+F 2 "" H 6938 2650 50  0001 C CNN
+F 3 "~" H 6900 2800 50  0001 C CNN
+	1    6900 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6750 2800 6600 2800
+Connection ~ 6600 2800
+Wire Wire Line
+	7050 2800 7150 2800
+$Comp
+L Device:D D?
+U 1 1 5C7E4490
+P 7150 2600
+F 0 "D?" V 7196 2521 50  0000 R CNN
+F 1 "D" V 7105 2521 50  0000 R CNN
+F 2 "" H 7150 2600 50  0001 C CNN
+F 3 "~" H 7150 2600 50  0001 C CNN
+	1    7150 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6600 2400 7150 2400
+Wire Wire Line
+	7150 2450 7150 2400
+Wire Wire Line
+	7150 2750 7150 2800
+Wire Notes Line
+	5000 2000 6100 2000
+Wire Notes Line
+	6100 2000 6100 3000
+Wire Notes Line
+	6100 3000 5000 3000
+Wire Notes Line
+	5000 3000 5000 2000
+Wire Notes Line
+	6200 2000 6200 3000
+Wire Notes Line
+	6200 3000 7300 3000
+Wire Notes Line
+	7300 3000 7300 2000
+Wire Notes Line
+	7300 2000 6200 2000
+Connection ~ 5950 2800
+Connection ~ 5950 2400
+Text Notes 8350 1900 2    50   ~ 0
+Voltage Doubler
+$Comp
+L Device:D D?
+U 1 1 5C7E6DA9
+P 7800 2600
+F 0 "D?" V 7754 2679 50  0000 L CNN
+F 1 "D" V 7845 2679 50  0000 L CNN
+F 2 "" H 7800 2600 50  0001 C CNN
+F 3 "~" H 7800 2600 50  0001 C CNN
+	1    7800 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C7E6DB0
+P 7500 2400
+F 0 "C?" V 7752 2400 50  0000 C CNN
+F 1 "C" V 7661 2400 50  0000 C CNN
+F 2 "" H 7538 2250 50  0001 C CNN
+F 3 "~" H 7500 2400 50  0001 C CNN
+	1    7500 2400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7650 2400 7800 2400
+Wire Wire Line
+	7800 2450 7800 2400
+Connection ~ 7800 2400
+Wire Wire Line
+	7150 2800 7800 2800
+Wire Wire Line
+	7800 2800 7800 2750
+$Comp
+L Device:C C?
+U 1 1 5C7E6DBD
+P 8100 2800
+F 0 "C?" H 8215 2846 50  0000 L CNN
+F 1 "C" H 8215 2755 50  0000 L CNN
+F 2 "" H 8138 2650 50  0001 C CNN
+F 3 "~" H 8100 2800 50  0001 C CNN
+	1    8100 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7950 2800 7800 2800
+Connection ~ 7800 2800
+Wire Wire Line
+	8250 2800 8350 2800
+$Comp
+L Device:D D?
+U 1 1 5C7E6DC7
+P 8350 2600
+F 0 "D?" V 8396 2521 50  0000 R CNN
+F 1 "D" V 8305 2521 50  0000 R CNN
+F 2 "" H 8350 2600 50  0001 C CNN
+F 3 "~" H 8350 2600 50  0001 C CNN
+	1    8350 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7800 2400 8350 2400
+Wire Wire Line
+	8350 2450 8350 2400
+Wire Wire Line
+	8350 2750 8350 2800
+Wire Notes Line
+	7400 2000 7400 3000
+Wire Notes Line
+	7400 3000 8500 3000
+Wire Notes Line
+	8500 3000 8500 2000
+Wire Notes Line
+	8500 2000 7400 2000
+Text Notes 9550 1900 2    50   ~ 0
+Voltage Doubler
+$Comp
+L Device:D D?
+U 1 1 5C7E7214
+P 9000 2600
+F 0 "D?" V 8954 2679 50  0000 L CNN
+F 1 "D" V 9045 2679 50  0000 L CNN
+F 2 "" H 9000 2600 50  0001 C CNN
+F 3 "~" H 9000 2600 50  0001 C CNN
+	1    9000 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C7E721B
+P 8700 2400
+F 0 "C?" V 8952 2400 50  0000 C CNN
+F 1 "C" V 8861 2400 50  0000 C CNN
+F 2 "" H 8738 2250 50  0001 C CNN
+F 3 "~" H 8700 2400 50  0001 C CNN
+	1    8700 2400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8850 2400 9000 2400
+Wire Wire Line
+	9000 2450 9000 2400
+Connection ~ 9000 2400
+Wire Wire Line
+	8350 2800 9000 2800
+Wire Wire Line
+	9000 2800 9000 2750
+$Comp
+L Device:C C?
+U 1 1 5C7E7228
+P 9300 2800
+F 0 "C?" H 9415 2846 50  0000 L CNN
+F 1 "C" H 9415 2755 50  0000 L CNN
+F 2 "" H 9338 2650 50  0001 C CNN
+F 3 "~" H 9300 2800 50  0001 C CNN
+	1    9300 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9150 2800 9000 2800
+Connection ~ 9000 2800
+Wire Wire Line
+	9450 2800 9550 2800
+$Comp
+L Device:D D?
+U 1 1 5C7E7232
+P 9550 2600
+F 0 "D?" V 9596 2521 50  0000 R CNN
+F 1 "D" V 9505 2521 50  0000 R CNN
+F 2 "" H 9550 2600 50  0001 C CNN
+F 3 "~" H 9550 2600 50  0001 C CNN
+	1    9550 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9000 2400 9550 2400
+Wire Wire Line
+	9550 2450 9550 2400
+Wire Wire Line
+	9550 2750 9550 2800
+Wire Notes Line
+	8600 2000 8600 3000
+Wire Notes Line
+	8600 3000 9700 3000
+Wire Notes Line
+	9700 3000 9700 2000
+Wire Notes Line
+	9700 2000 8600 2000
+Wire Wire Line
+	7350 2400 7150 2400
+Connection ~ 7150 2400
+Wire Wire Line
+	8550 2400 8350 2400
+Connection ~ 8350 2400
+Text HLabel 1550 3950 0    50   Input ~ 0
+SWITCH_IN
+$Comp
+L Device:Q_NJFET_DGS Q?
+U 1 1 5C7F43BC
+P 3650 3350
+F 0 "Q?" H 3841 3396 50  0000 L CNN
+F 1 "Q_NJFET_DGS" H 3841 3305 50  0000 L CNN
+F 2 "" H 3850 3450 50  0001 C CNN
+F 3 "~" H 3650 3350 50  0001 C CNN
+	1    3650 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2800 3750 2800
+Wire Wire Line
+	1550 4500 2700 4500
+Wire Wire Line
+	3750 4500 3750 3550
+$Comp
+L Transistor_BJT:2N3904 Q?
+U 1 1 5C7F6373
+P 2600 3950
+AR Path="/5C7F6373" Ref="Q?"  Part="1" 
+AR Path="/5C7D6DB6/5C7F6373" Ref="Q?"  Part="1" 
+F 0 "Q?" H 2791 3996 50  0000 L CNN
+F 1 "02N3904" H 2791 3905 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2800 3875 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 2600 3950 50  0001 L CNN
+	1    2600 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 2800 3750 3150
+Wire Wire Line
+	2700 4150 2700 4500
+Connection ~ 2700 4500
+Wire Wire Line
+	2700 4500 3750 4500
+$Comp
+L Device:R R?
+U 1 1 5C7F8FBD
+P 3100 3350
+F 0 "R?" V 2893 3350 50  0000 C CNN
+F 1 "10" V 2984 3350 50  0000 C CNN
+F 2 "" V 3030 3350 50  0001 C CNN
+F 3 "~" H 3100 3350 50  0001 C CNN
+	1    3100 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2700 3350 2950 3350
+Wire Wire Line
+	2700 3350 2700 3750
+Wire Wire Line
+	3250 3350 3450 3350
+Wire Wire Line
+	1600 2400 2700 2400
+$Comp
+L Device:R R?
+U 1 1 5C7FB64E
+P 2700 2900
+F 0 "R?" H 2630 2854 50  0000 R CNN
+F 1 "330" H 2630 2945 50  0000 R CNN
+F 2 "" V 2630 2900 50  0001 C CNN
+F 3 "~" H 2700 2900 50  0001 C CNN
+	1    2700 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2700 2750 2700 2400
+Connection ~ 2700 2400
+Wire Wire Line
+	2700 2400 3950 2400
+Wire Wire Line
+	2700 3050 2700 3350
+Connection ~ 2700 3350
+$Comp
+L Device:R R?
+U 1 1 5C7FD588
+P 1900 3950
+F 0 "R?" V 1693 3950 50  0000 C CNN
+F 1 "100" V 1784 3950 50  0000 C CNN
+F 2 "" V 1830 3950 50  0001 C CNN
+F 3 "~" H 1900 3950 50  0001 C CNN
+	1    1900 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1750 3950 1550 3950
+Wire Wire Line
+	2050 3950 2400 3950
+Wire Wire Line
+	5000 3550 4850 3550
+Wire Wire Line
+	4850 3550 4850 2800
+Connection ~ 4850 2800
+Wire Wire Line
+	4850 2800 5400 2800
+Wire Wire Line
+	9950 2800 9550 2800
+Connection ~ 9550 2800
+$EndSCHEMATC
